@@ -1,131 +1,131 @@
 import { Entity, Location } from "../../model/Model";
 
-export const textD = `Anna sat on the beach, watching the waves crash against the shore. The wind blew her hair around, but she didn’t mind. She loved the sound of the ocean. It helped her forget her worries, at least for a little while. She had been thinking about her brother, David, who lived far away. They hadn’t spoken in weeks, and she missed him.
+export const textD = `安娜坐在海滩上，看着海浪拍打海岸。风吹着她的头发，但她并不在意。她喜欢大海的声音。这帮助她忘记烦恼，至少暂时如此。她一直在想她的哥哥大卫，他住在很远的地方。他们已经几周没有交谈了，她很想念他。
 
-David was in the city, sitting at his desk, staring at his computer. He was tired from a long day of work. His job was stressful, and he often felt lonely in the big, noisy city. He wanted to call Anna, but he was afraid she might be too busy. He knew she was going through a tough time, and he didn’t want to add to her troubles.
+大卫在城市里，坐在办公桌前，盯着电脑。经过一天漫长的工作，他很累。他的工作很有压力，在这个嘈杂的大城市里，他经常感到孤独。他想给安娜打电话，但他担心她可能太忙了。他知道她正在经历艰难的时期，他不想增加她的烦恼。
 
-Meanwhile, their friend Emma was in the mountains, hiking up a trail. She loved the peacefulness of nature. The trees were tall, and the air was fresh. As she reached the top of the hill, she thought about Anna and David. They used to do everything together, but now they were all in different places. She hoped they could reunite soon, even if just for a little while.`
+与此同时，他们的朋友艾玛在山里，沿着小径徒步旅行。她喜欢大自然的宁静。树木高大，空气清新。当她到达山顶时，她想起了安娜和大卫。他们过去总是一起做所有事情，但现在他们都在不同的地方。她希望他们能很快重聚，哪怕只是一小会儿。`
 
 export const dataTextD : {locations: Location[], entities: Entity[], actions: any[]} = {
     locations: [
         {
-          "name": "Beach",
+          "name": "海滩",
           "emoji": "🏖️"
         },
         {
-          "name": "City",
+          "name": "城市",
           "emoji": "🏙️"
         },
         {
-          "name": "Mountains",
+          "name": "山脉",
           "emoji": "🏞️"
         }
       ],
     entities: [
         {
-          "name": "Anna",
+          "name": "安娜",
           "emoji": "👩",
           "properties": [
             {
-              "name": "thoughtful",
+              "name": "深思",
               "value": 8
             },
             {
-              "name": "calm",
+              "name": "平静",
               "value": 7
             },
             {
-              "name": "nostalgic",
+              "name": "怀念",
               "value": 6
             }
           ]
         },
         {
-          "name": "David",
+          "name": "大卫",
           "emoji": "👨‍💼",
           "properties": [
             {
-              "name": "tired",
+              "name": "疲惫",
               "value": 9
             },
             {
-              "name": "lonely",
+              "name": "孤独",
               "value": 7
             },
             {
-              "name": "considerate",
+              "name": "体贴",
               "value": 6
             }
           ]
         },
         {
-          "name": "Emma",
+          "name": "艾玛",
           "emoji": "🚶‍♀️",
           "properties": [
             {
-              "name": "adventurous",
+              "name": "冒险",
               "value": 8
             },
             {
-              "name": "peaceful",
+              "name": "平和",
               "value": 7
             },
             {
-              "name": "hopeful",
+              "name": "希望",
               "value": 6
             }
           ]
         },
         {
-          "name": "Computer",
+          "name": "电脑",
           "emoji": "💻",
           "properties": [
             {
-              "name": "distracting",
+              "name": "分心",
               "value": 8
             },
             {
-              "name": "stressful",
+              "name": "压力",
               "value": 7
             },
             {
-              "name": "isolating",
+              "name": "孤立",
               "value": 6
             }
           ]
         },
         {
-          "name": "Waves",
+          "name": "海浪",
           "emoji": "🌊",
           "properties": [
             {
-              "name": "calming",
+              "name": "平静",
               "value": 8
             },
             {
-              "name": "soothing",
+              "name": "舒缓",
               "value": 7
             },
             {
-              "name": "refreshing",
+              "name": "清爽",
               "value": 6
             }
           ]
         },
         {
-          "name": "Wind",
+          "name": "风",
           "emoji": "💨",
           "properties": [
             {
-              "name": "refreshing",
+              "name": "清爽",
               "value": 8
             },
             {
-              "name": "playful",
+              "name": "顽皮",
               "value": 7
             },
             {
-              "name": "invigorating",
+              "name": "振奋",
               "value": 6
             }
           ]
@@ -133,70 +133,70 @@ export const dataTextD : {locations: Location[], entities: Entity[], actions: an
       ],
     actions: [
         {
-          "name": "sat",
+          "name": "坐着",
           "source": "Anna",
           "target": "Anna",
           "location": "Beach",
           "passage": "Anna sat on the beach, watching the waves crash against the shore."
         },
         {
-          "name": "watching",
+          "name": "观看",
           "source": "Anna",
           "target": "Waves",
           "location": "Beach",
           "passage": "Anna sat on the beach, watching the waves crash against the shore."
         },
         {
-          "name": "blew hair",
+          "name": "吹头发",
           "source": "Wind",
           "target": "Anna",
           "location": "Beach",
           "passage": "The wind blew her hair around, but she didn’t mind."
         },
         {
-          "name": "sitting",
+          "name": "坐着",
           "source": "David",
           "target": "David",
           "location": "City",
           "passage": "David was in the city, sitting at his desk, staring at his computer."
         },
         {
-          "name": "staring",
+          "name": "凝视",
           "source": "David",
           "target": "Computer",
           "location": "City",
           "passage": "David was in the city, sitting at his desk, staring at his computer."
         },
         {
-          "name": "wanted to call",
+          "name": "想要打电话",
           "source": "David",
           "target": "Anna",
           "location": "City",
           "passage": "He wanted to call Anna, but he was afraid she might be too busy."
         },
         {
-          "name": "hiking up",
+          "name": "徒步上山",
           "source": "Emma",
           "target": "Emma",
           "location": "Mountains",
           "passage": "Meanwhile, their friend Emma was in the mountains, hiking up a trail."
         },
         {
-          "name": "reach top",
+          "name": "到达山顶",
           "source": "Emma",
           "target": "Emma",
           "location": "Mountains",
           "passage": "As she reached the top of the hill, she thought about Anna and David."
         },
         {
-          "name": "think about",
+          "name": "想起",
           "source": "Emma",
           "target": "Anna",
           "location": "Mountains",
           "passage": "As she reached the top of the hill, she thought about Anna and David."
         },
         {
-          "name": "think about",
+          "name": "想起",
           "source": "Emma",
           "target": "David",
           "location": "Mountains",

@@ -1,31 +1,31 @@
 import { Entity, Location } from "../../model/Model";
 
-export const textB = `One snowy winter morning, Jack jumped up and looked out his window to see the world covered in thick sparkling snow. Perfect sledding snow!
+export const textB = `一个雪花纷飞的冬日早晨，杰克跳下床，从窗口向外望去，看到世界被厚厚的闪闪发光的雪覆盖着。完美的滑雪橇雪！
 
-He threw on his snow pants and jacket, then dashed outside before his mom could even finish saying, "don’t forget your hat!"
+他匆忙穿上雪裤和夹克，然后冲出门外，连妈妈的话"别忘了戴帽子！"都没听完。
 
-But Jack was already at the hill. He took a deep breath in and began his climb, dragging his sled behind him. He climbed higher and higher until he finally reached the top. As he looked down, the hill felt so large to the 8-year-old Jack that it seemed like a mountain.
+但杰克已经到了山坡上。他深吸一口气，开始攀登，拖着雪橇跟在后面。他爬得越来越高，直到终于到达山顶。当他向下看时，这座山对8岁的杰克来说感觉如此巨大，就像一座山峰。
 
-Without waiting another second, he positioned his sled strategically and loaded himself on. WOOSH!
+等不了一秒钟，他战略性地放置雪橇，然后坐了上去。呼！
 
-He zoomed down the hill so fast that his hat flew right off his head.
-He zoomed past all the children climbing the hill.
-He zoomed past the parents waiting at the bottom of the hill. But he didn't slow down.
-He zoomed faster and faster, and crashed into the hay bales.
-He flew off his sled and into the air. He soared through the sky, flying past a flock of noisy geese.`
+他滑下山坡的速度如此之快，帽子直接从头上飞了下来。
+他飞速经过所有正在爬山的孩子们。
+他飞速经过在山底等待的父母们。但他没有放慢速度。
+他越来越快，撞进了干草堆。
+他从雪橇上飞了出去，飞向空中。他在天空中翱翔，飞过一群嘈杂的鹅。`
 
 export const dataTextB : {locations: Location[], entities: Entity[], actions: any[]} = {
     locations: [
         {
-            "name": "Jack's House",
+            "name": "杰克的家",
             "emoji": "🏠"
         },
         {
-            "name": "The Hill",
+            "name": "山坡",
             "emoji": "⛰️"
         },
         {
-            "name": "The Bottom of the Hill",
+            "name": "山底",
             "emoji": "🏞️"
         },
         {
@@ -39,155 +39,155 @@ export const dataTextB : {locations: Location[], entities: Entity[], actions: an
     ],
     entities: [
         {
-            "name": "Jack",
+            "name": "杰克",
             "emoji": "👦",
             "properties": [
                 {
-                    "name": "excited",
+                    "name": "兴奋",
                     "value": 9
                 },
                 {
-                    "name": "adventurous",
+                    "name": "冒险",
                     "value": 8
                 },
                 {
-                    "name": "energetic",
+                    "name": "精力充沛",
                     "value": 10
                 }
             ]
         },
         {
-            "name": "snow",
+            "name": "雪",
             "emoji": "❄️",
             "properties": [
                 {
-                    "name": "sparkling",
+                    "name": "闪闪发光",
                     "value": 8
                 },
                 {
-                    "name": "thick",
+                    "name": "厚厚的",
                     "value": 7
                 },
                 {
-                    "name": "cold",
+                    "name": "寒冷",
                     "value": 9
                 }
             ]
         },
         {
-            "name": "sled",
+            "name": "雪橇",
             "emoji": "🛷",
             "properties": [
                 {
-                    "name": "fast",
+                    "name": "快速",
                     "value": 9
                 },
                 {
-                    "name": "smooth",
+                    "name": "光滑",
                     "value": 8
                 },
                 {
-                    "name": "lightweight",
+                    "name": "轻便",
                     "value": 7
                 }
             ]
         },
         {
-            "name": "hill",
+            "name": "山坡",
             "emoji": "⛰️",
             "properties": [
                 {
-                    "name": "steep",
+                    "name": "陡峭",
                     "value": 8
                 },
                 {
-                    "name": "large",
+                    "name": "巨大",
                     "value": 7
                 },
                 {
-                    "name": "snowy",
+                    "name": "白雪皑皑",
                     "value": 9
                 }
             ]
         },
         {
-            "name": "hat",
+            "name": "帽子",
             "emoji": "🎩",
             "properties": [
                 {
-                    "name": "warm",
+                    "name": "温暖",
                     "value": 7
                 },
                 {
-                    "name": "colorful",
+                    "name": "多彩",
                     "value": 6
                 },
                 {
-                    "name": "light",
+                    "name": "轻盈",
                     "value": 5
                 }
             ]
         },
         {
-            "name": "hay bales",
+            "name": "干草堆",
             "emoji": "🌾",
             "properties": [
                 {
-                    "name": "soft",
+                    "name": "柔软",
                     "value": 6
                 },
                 {
-                    "name": "protective",
+                    "name": "保护",
                     "value": 8
                 },
                 {
-                    "name": "stacked",
+                    "name": "堆叠",
                     "value": 7
                 }
             ]
         },
         {
-            "name": "geese",
+            "name": "鹅群",
             "emoji": "🦢",
             "properties": [
                 {
-                    "name": "noisy",
+                    "name": "嘈杂",
                     "value": 8
                 },
                 {
-                    "name": "flying",
+                    "name": "飞翔",
                     "value": 9
                 },
                 {
-                    "name": "flock",
+                    "name": "群体",
                     "value": 7
                 }
             ]
         },
         {
-            name: "parents",
+            name: "父母",
             emoji: "👨‍👩‍👦",
             properties: [
                 {
-                    name: "waiting",
+                    name: "等待",
                     value: 7
                 },
                 {
-                    name: "watching",
+                    name: "观看",
                     value: 8
                 },
                 {
-                    name: "smiling",
+                    name: "微笑",
                     value: 9
                 }
             ]
         },
         {
-            name: "children",
+            name: "孩子们",
             emoji: "🧒",
             properties: [
                 {
-                    name: "climbing",
+                    name: "攀爬",
                     value: 8
                 },
             ]

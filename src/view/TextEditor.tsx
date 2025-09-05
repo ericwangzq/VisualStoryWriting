@@ -195,8 +195,8 @@ export default function TextEditor({overlayOnHover = true} : {overlayOnHover?: b
         </Slate>
 
         {isTextSuggested && <div style={{ position: 'absolute', top: 10, transform: 'translate(-50%, 0)', left: '50%' }}>
-          <Button size="sm" variant='faded' style={{marginRight: 5}} onClick={() => useModelStore.getState().acceptSuggestions()}><FaCheck /> Accept changes</Button>
-          <Button size="sm" variant='faded' onClick={() => useModelStore.getState().rejectSuggestions()} ><ImCross /> Reject changes</Button>
+          <Button size="sm" variant='faded' style={{marginRight: 5}} onClick={() => useModelStore.getState().acceptSuggestions()}><FaCheck /> 接受修改</Button>
+          <Button size="sm" variant='faded' onClick={() => useModelStore.getState().rejectSuggestions()} ><ImCross /> 拒绝修改</Button>
         </div>}
       </div>
     </>

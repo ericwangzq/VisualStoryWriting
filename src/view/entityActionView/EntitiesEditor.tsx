@@ -96,7 +96,7 @@ export default function EntitiesEditor() {
             const targetNode = entityNodes.find(node => node.id === params.target);
 
             setInputField({
-              placeholder: "Enter the action name",
+              placeholder: "输入动作名称",
               x: currentMousePosition.x - divRef.current!.getBoundingClientRect().left,
               y: currentMousePosition.y - divRef.current!.getBoundingClientRect().top,
               onValidate: (text) => {
@@ -123,7 +123,7 @@ export default function EntitiesEditor() {
             if (!useModelStore.getState().isReadOnly && (event.target as HTMLElement).classList.contains("react-flow__pane") && divRef.current) {
               setInputField(
                 {
-                  placeholder: "Enter the entity name",
+                  placeholder: "输入角色名称",
                   x: event.clientX - divRef.current!.getBoundingClientRect().left, 
                   y: event.clientY - divRef.current!.getBoundingClientRect().top,
                   onValidate: (text) => {
@@ -156,7 +156,7 @@ export default function EntitiesEditor() {
               setInputField(null);
             }
           }} /></div>}
-          {!isReadOnly && <span style={{position: 'absolute', bottom: 5, left: '50%', transform: 'translate(-50%, 0%)', pointerEvents: 'none', color: '#888'}}>Double click to create a new entity</span>}
+          {!isReadOnly && <span style={{position: 'absolute', bottom: 5, left: '50%', transform: 'translate(-50%, 0%)', pointerEvents: 'none', color: '#888'}}>双击创建新角色</span>}
       </div>
     </>
   )

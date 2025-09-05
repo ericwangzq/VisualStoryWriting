@@ -200,7 +200,7 @@ export default function ActionTimeline() {
       }}>
       </Slider>
       <span style={{fontSize: 12, color: 'rgba(0,0,0,0.5)', marginRight: 10}}>
-        {nbEventsShown < actionEdges.length ? `Viewing ${nbEventsShown} / ${actionEdges.length} Events` : `Viewing all ${actionEdges.length} Events`}
+        {nbEventsShown < actionEdges.length ? `查看 ${nbEventsShown} / ${actionEdges.length} 个事件` : `查看全部 ${actionEdges.length} 个事件`}
       </span>
 
       <div>

@@ -49,10 +49,10 @@ export default function HistoryTree() {
 
   return (
       <div id="treeWrapper" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: '100%', flexGrow: 0, maxHeight: 50, background: '#F3F4F6', borderTop: '1px solid #DDDDDF'}}>
-        <Tooltip content="Undo" closeDelay={0} placement='right'>
+        <Tooltip content="撤销" closeDelay={0} placement='right'>
           <Button isDisabled={positionInTree.length === 0} isIconOnly size='sm' style={{fontSize: 18, marginLeft: 5}} onClick={() => useHistoryModelStore.getState().undo()}><IoArrowUndo/></Button>
         </Tooltip>
-        <Tooltip content="Redo" closeDelay={0} placement='right'>
+        <Tooltip content="重做" closeDelay={0} placement='right'>
           <Button isDisabled={redoStack.length === 0} isIconOnly size='sm' style={{fontSize: 18, marginLeft: 5}} onClick={() => useHistoryModelStore.getState().redo()}><IoArrowRedo/></Button>
         </Tooltip>
         <Tree

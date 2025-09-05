@@ -98,8 +98,8 @@ export default function VisualWritingInterface(props: { children?: React.ReactNo
             {selectedTab === "entities" && <ReactFlowProvider><EntitiesEditor /></ReactFlowProvider>}
             {selectedTab === "locations" && <ReactFlowProvider><LocationsEditor /></ReactFlowProvider>}
             <Tabs keyboardActivation='manual' onSelectionChange={setSelectedTabLogged as any} selectedKey={selectedTab} color='primary' variant='bordered' style={{ position: 'absolute', left: '50%', top: 10, transform: 'translate(-50%, 0)' }} classNames={{ tabList: 'bg-white', }}>
-              <Tab key={"entities"} title={<span style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', fontSize: 15 }}><IoPersonCircle style={{ marginRight: 3, fontSize: 22 }} /> Entities & Actions</span>} />
-              <Tab key={'locations'} title={<span style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', fontSize: 15 }}><FaLocationDot style={{ marginRight: 3, fontSize: 18 }} /> Locations</span>} />
+              <Tab key={"entities"} title={<span style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', fontSize: 15 }}><IoPersonCircle style={{ marginRight: 3, fontSize: 22 }} /> 角色与动作</span>} />
+              <Tab key={'locations'} title={<span style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', fontSize: 15 }}><FaLocationDot style={{ marginRight: 3, fontSize: 18 }} /> 地点</span>} />
             </Tabs>            
 
             {!isReadOnly && <Button style={{ position: 'absolute', right: 10, top: 10, fontSize: 18 }} isIconOnly onClick={(e) => {
@@ -116,7 +116,7 @@ export default function VisualWritingInterface(props: { children?: React.ReactNo
           </div>
           <ReactFlowProvider><ActionTimeline /></ReactFlowProvider>
           {!isReadOnly && <div style={{ display: 'flex', flexDirection: 'column', gap: 5, position: 'absolute', left: 0, top: '50%', transform: 'translate(-50%, -50%)', fontSize: 22 }}>
-            <Tooltip content="Refresh from text" closeDelay={0}>
+            <Tooltip content="从文本刷新" closeDelay={0}>
               <Button style={{ fontSize: 22 }} color={isStale ? "primary": "default"} isLoading={isExtracting} isIconOnly radius={'full'}
                 onClick={() => {
 
@@ -151,7 +151,7 @@ export default function VisualWritingInterface(props: { children?: React.ReactNo
               </Button>
             </Tooltip>
 
-            <Tooltip placement='bottom' content="Write from visual" closeDelay={0}>
+            <Tooltip placement='bottom' content="从可视化写作" closeDelay={0}>
               <Button style={{ fontSize: 22 }} isLoading={isExtracting} isIconOnly radius={'full'}
                 onClick={() => {
                   new RewriteFromVisual().execute();

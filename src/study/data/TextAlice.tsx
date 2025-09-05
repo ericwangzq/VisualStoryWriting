@@ -1,98 +1,98 @@
 import { Entity, Location } from "../../model/Model";
 
 
-export const textAlice = `Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?”
+export const textAlice = `爱丽丝开始对坐在河岸上姐姐身边感到非常厌倦，无事可做：她曾经一两次偷看姐姐正在读的书，但书里没有图片或对话，"一本书有什么用呢，"爱丽丝想，"如果没有图片或对话？"
 
-So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.
+所以她在心里考虑着（尽她所能，因为炎热的天气让她感到非常困倦和愚钝），制作雏菊花环的乐趣是否值得起身去采摘雏菊的麻烦，突然一只粉红眼睛的白兔跑过她身边。
 
-There was nothing so _very_ remarkable in that; nor did Alice think it so _very_ much out of the way to hear the Rabbit say to itself, “Oh dear! Oh dear! I shall be late!” (when she thought it over afterwards, it occurred to her that she ought to have wondered at this, but at the time it all seemed quite natural); but when the Rabbit actually _took a watch out of its waistcoat-pocket_, and looked at it, and then hurried on, Alice started to her feet, for it flashed across her mind that she had never before seen a rabbit with either a waistcoat-pocket, or a watch to take out of it, and burning with curiosity, she ran across the field after it, and fortunately was just in time to see it pop down a large rabbit-hole under the hedge.
+这本身并没有什么_特别_了不起的；爱丽丝也不认为听到兔子对自己说"哦，天哪！哦，天哪！我要迟到了！"有什么_特别_不寻常的（当她后来想起这件事时，她意识到她应该对此感到奇怪，但当时这一切似乎都很自然）；但是当兔子真的_从马甲口袋里掏出一块手表_，看了看，然后匆忙离开时，爱丽丝跳了起来，因为她突然想到，她以前从未见过兔子有马甲口袋或手表可以掏出来，出于强烈的好奇心，她跑过田野追赶它，幸运的是，她正好及时看到它跳进了树篱下一个大兔子洞。
 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n`;
 
 
 export const dataTextAlice : {locations: Location[], entities: Entity[], actions: any[]} = {
     entities: [
         {
-            "name": "Alice",
+            "name": "爱丽丝",
             "emoji": "👧",
             "properties": [
                 {
-                    "name": "curious",
+                    "name": "好奇",
                     "value": 8
                 },
                 {
-                    "name": "sleepy",
+                    "name": "困倦",
                     "value": 6
                 },
                 {
-                    "name": "bored",
+                    "name": "无聊",
                     "value": 7
                 }
             ]
         },
         {
-            "name": "Sister",
+            "name": "姐姐",
             "emoji": "👩",
             "properties": [
                 {
-                    "name": "reading",
+                    "name": "阅读",
                     "value": 7
                 }
             ]
         },
         {
-            "name": "Book",
+            "name": "书",
             "emoji": "📖",
             "properties": [
                 {
-                    "name": "pictureless",
+                    "name": "无图片",
                     "value": 10
                 },
                 {
-                    "name": "conversationless",
+                    "name": "无对话",
                     "value": 10
                 }
             ]
         },
         {
-            "name": "Daisy-chain",
+            "name": "雏菊花环",
             "emoji": "🌼",
             "properties": [
                 {
-                    "name": "pleasurable",
+                    "name": "愉悦",
                     "value": 5
                 }
             ]
         },
         {
-            "name": "White Rabbit",
+            "name": "白兔",
             "emoji": "🐇",
             "properties": [
                 {
-                    "name": "anxious",
+                    "name": "焦虑",
                     "value": 9
                 },
                 {
-                    "name": "remarkable",
+                    "name": "非凡",
                     "value": 7
                 }
             ]
         },
         {
-            "name": "Watch",
+            "name": "手表",
             "emoji": "⌚",
             "properties": [
                 {
-                    "name": "unusual",
+                    "name": "不寻常",
                     "value": 8
                 }
             ]
         },
         {
-            "name": "Rabbit-hole",
+            "name": "兔子洞",
             "emoji": "🕳️",
             "properties": [
                 {
-                    "name": "large",
+                    "name": "巨大",
                     "value": 7
                 }
             ]
@@ -100,15 +100,15 @@ export const dataTextAlice : {locations: Location[], entities: Entity[], actions
     ],
     locations: [
         {
-            "name": "bank",
+            "name": "河岸",
             "emoji": "🏞️"
         },
         {
-            "name": "field",
+            "name": "田野",
             "emoji": "🌾"
         },
         {
-            "name": "hedge",
+            "name": "树篱",
             "emoji": "🌳"
         }
     ],

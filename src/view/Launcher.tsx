@@ -52,11 +52,11 @@ export default function Launcher() {
 
   return <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
     <Card>
-        <CardHeader><span style={{fontSize: 25}}><MdHistoryEdu /></span><span style={{marginLeft: 5}}>Visual Story-Writing</span></CardHeader>
+        <CardHeader><span style={{fontSize: 25}}><MdHistoryEdu /></span><span style={{marginLeft: 5}}>可视化故事写作</span></CardHeader>
         <Divider />
         <CardBody>
-            <p>To run the examples below, please paste an OpenAI API key. You can obtain one from <a href="https://platform.openai.com/account/api-keys">here</a>.</p>
-            <Input variant="faded" label="API Key" placeholder="sk-..." style={{marginTop: 10}}
+            <p>要运行下面的示例，请粘贴您的OpenAI API密钥。您可以从<a href="https://platform.openai.com/account/api-keys">这里</a>获取。</p>
+            <Input variant="faded" label="API密钥" placeholder="sk-..." style={{marginTop: 10}}
             onChange={(e) => {
                 setAccessKey(e.target.value);
                 setOpenAIKey(e.target.value);
@@ -65,43 +65,43 @@ export default function Launcher() {
         </CardBody>
         <Divider />
         <CardBody>
-            <span style={{fontWeight: 800}}>Shortcuts to try out Visual Story-Writing on examples</span>
+            <span style={{fontWeight: 800}}>快速试用可视化故事写作示例</span>
             <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 40, marginTop: 10}}>
                 <Button 
                 isDisabled={accessKey.length === 0}
                     onClick={() => {
                         startExample(textAlice, dataTextAlice)
                     }}
-                >Alice in Wonderland</Button>
+                >爱丽丝梦游仙境</Button>
                 
                 <Button
                 isDisabled={accessKey.length === 0}
                 onClick={() => {
                     startExample(textB, dataTextB)
                 }}  
-                >Sled Adventure</Button>
+                >雪橇冒险</Button>
 
 <Button
                 isDisabled={accessKey.length === 0}
                 onClick={() => {
                     startExample(textD, dataTextD)
                 }}  
-                >Waves Apart</Button>
+                >海浪相隔</Button>
 
                 <Button
                 isDisabled={accessKey.length === 0}
                     onClick={() => {
                         startExample("", null);
                     }}
-                >Blank Page</Button>
+                >空白页面</Button>
             </div>
         </CardBody>
         <Divider />
         <CardBody>
-            <span style={{fontWeight: 800}}>Run study 1</span>
+            <span style={{fontWeight: 800}}>运行研究1</span>
             <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'left', alignItems: 'center', gap: 40, marginTop: 10}}>
                 <Select isDisabled={accessKey.length === 0}
-                variant="faded" label="Participant ID" className="max-w-xs" 
+                variant="faded" label="参与者ID" className="max-w-xs" 
                 onChange={(e) => setPid(parseInt(e.target.value))}>
                     {
                         Array.from({length: 12}, (_, i) => i).map((i) => <SelectItem key={i} value={i+1} textValue={"P" + (i+1)}>P{i+1}</SelectItem>)
@@ -114,15 +114,15 @@ export default function Launcher() {
                         resetStudyModel();
                         window.location.hash = '/study' + '?pid=' + (pid+1) + `&k=${btoa(accessKey)}` + '&studyType=READING';
                     }}
-                >Start</Button>
+                >开始</Button>
             </div>
         </CardBody>
         <Divider />
         <CardBody>
-            <span style={{fontWeight: 800}}>Run study 2</span>
+            <span style={{fontWeight: 800}}>运行研究2</span>
             <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'left', alignItems: 'center', gap: 40, marginTop: 10}}>
                 <Select isDisabled={accessKey.length === 0}
-                variant="faded" label="Participant ID" className="max-w-xs" 
+                variant="faded" label="参与者ID" className="max-w-xs" 
                 onChange={(e) => setPid(parseInt(e.target.value))}>
                     {
                         Array.from({length: 12}, (_, i) => i).map((i) => <SelectItem key={i} value={i+1} textValue={"P" + (i+1)}>P{i+1}</SelectItem>)
@@ -135,7 +135,7 @@ export default function Launcher() {
                         resetStudyModel();
                         window.location.hash = '/study' + '?pid=' + (pid+1) + `&k=${btoa(accessKey)}` + '&studyType=WRITING';
                     }}
-                >Start</Button>
+                >开始</Button>
             </div>
         </CardBody>
     </Card>
